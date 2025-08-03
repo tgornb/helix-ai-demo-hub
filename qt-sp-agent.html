@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Specialist Agent by UIH - สร้างใบเสนอราคาอัตโนมัติ</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles inspired by the reference image */
+        body {
+            font-family: 'Kanit', 'Inter', sans-serif;
+            background-color: #0A0F1F; /* Dark blue background */
+            color: #E0E0E0;
+        }
+
+        .highlight-text {
+            color: #60A5FA; /* Light blue for highlights */
+        }
+        
+        .hero-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 60%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(10, 15, 31, 0) 70%);
+            filter: blur(90px);
+            z-index: -1;
+            animation: pulse-glow 10s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            from {
+                opacity: 0.6;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        .card {
+            background-color: #111827; /* Darker card background */
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+        }
+
+        /* Scroll reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/50 backdrop-blur-lg border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="highlight-text">Quotation</span>
+                <span class="text-gray-300">Specialist Agent</span>
+            </div>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-5 rounded-lg transition-colors duration-300">
+                ขอรับ Demo
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
+            <div class="hero-glow"></div>
+            <div class="container mx-auto px-6 z-10">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight reveal">
+                    ผู้ช่วย AI สำหรับสร้าง<br><span class="highlight-text">ใบเสนอราคาอัตโนมัติ</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-gray-400 reveal" style="transition-delay: 200ms;">
+                    Quotation Specialist Agent ช่วยทีมขายและลูกค้าสร้างใบเสนอราคา (Quotation) ได้อย่างรวดเร็ว ถูกต้อง และเป็นมืออาชีพ ลดเวลาทำงานจากหลักชั่วโมงเหลือเพียงไม่กี่นาที
+                </p>
+                <div class="mt-10 reveal" style="transition-delay: 400ms;">
+                    <a href="#features" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/20">
+                        ดูความสามารถหลัก
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="py-20 sm:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white reveal">ปัญหาเดิมๆ ของการทำใบเสนอราคา</h2>
+                    <p class="mt-4 text-gray-400 reveal" style="transition-delay: 200ms;">กระบวนการที่ซับซ้อน ล่าช้า และเสี่ยงต่อความผิดพลาด ทำให้เสียโอกาสทางธุรกิจ</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-8">
+                    <!-- Problem 1 -->
+                    <div class="card p-8 rounded-2xl reveal">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-500/80 text-white mb-6">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">ขั้นตอนล่าช้าและซับซ้อน</h3>
+                        <p class="mt-2 text-gray-400">การค้นหาราคา ตรวจสอบสต็อก และขออนุมัติส่วนลด ใช้เวลานานและหลายขั้นตอน ทำให้ลูกค้าต้องรอ</p>
+                    </div>
+                    <!-- Problem 2 -->
+                    <div class="card p-8 rounded-2xl reveal" style="transition-delay: 200ms;">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-600/80 text-white mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">เสี่ยงต่อข้อผิดพลาด</h3>
+                        <p class="mt-2 text-gray-400">การคีย์ข้อมูลด้วยตนเองอาจทำให้ราคาหรือส่วนลดผิดพลาด ส่งผลกระทบต่อความน่าเชื่อถือและกำไรของบริษัท</p>
+                    </div>
+                    <!-- Problem 3 -->
+                    <div class="card p-8 rounded-2xl reveal" style="transition-delay: 400ms;">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500/80 text-white mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">เหมาะกับทีมขายและลูกค้า</h3>
+                        <p class="mt-2 text-gray-400">ทั้งทีมขายที่ต้องการความรวดเร็ว และลูกค้าองค์กรที่อยากประเมินราคาเบื้องต้นด้วยตนเอง</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution/Features Section -->
+        <section id="features" class="py-20 sm:py-32 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white reveal">
+                        <span class="highlight-text">ความสามารถหลัก</span> ของ Agent
+                    </h2>
+                    <p class="mt-4 text-gray-400 reveal" style="transition-delay: 200ms;">
+                        เปลี่ยนการทำใบเสนอราคาที่ยุ่งยากให้เป็นเรื่องง่ายด้วยระบบอัตโนมัติที่ชาญฉลาด
+                    </p>
+                </div>
+                <div class="mt-16 grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="reveal">
+                        <div class="space-y-8">
+                            <!-- Feature 1 -->
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-white">ค้นหาราคาและตรวจสอบส่วนลดอัตโนมัติ</h4>
+                                    <p class="mt-1 text-gray-400">ดึงข้อมูลจากฐานราคาล่าสุด (Google Sheets/Database) และตรวจสอบสิทธิ์ส่วนลดตามนโยบายทันที</p>
+                                </div>
+                            </div>
+                             <!-- Feature 2 -->
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-white">สร้างเอกสารใบเสนอราคาพร้อมใช้</h4>
+                                    <p class="mt-1 text-gray-400">จัดทำใบเสนอราคาในรูปแบบที่สวยงาม เป็นมืออาชีพ พร้อมคำอธิบายสินค้า/บริการ และปรับแต่งตาม Branding ได้</p>
+                                </div>
+                            </div>
+                             <!-- Feature 3 -->
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12s-.114-.938-.316-1.342m0 2.684a3 3 0 112.632-3.001M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-white">เชื่อมต่อและทำงานร่วมกับ Agent อื่น</h4>
+                                    <p class="mt-1 text-gray-400">รองรับการขอต่อรองราคา และสามารถเชื่อมต่อกับ Solution Agent เพื่อขอคำแนะนำทางเทคนิคประกอบใบเสนอราคา</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal" style="transition-delay: 200ms;">
+                        <img src="https://placehold.co/600x500/111827/60A5FA?text=Quotation+Agent+UI" alt="Quotation Specialist Agent Interface" class="rounded-2xl shadow-2xl shadow-blue-900/30 w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section id="contact" class="py-20 sm:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto reveal">
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white">
+                        เปลี่ยนการทำใบเสนอราคาให้เป็นเรื่องง่าย วันนี้
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-400">
+                        ติดต่อเราเพื่อขอรับการสาธิต (Demo) และดูว่า Quotation Specialist Agent
+                        จะช่วยเพิ่มประสิทธิภาพให้ทีมขายของคุณได้อย่างไร
+                    </p>
+                    <div class="mt-10">
+                        <a href="mailto:contact@uih.co.th" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/20">
+                            ขอรับ Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 UIH. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll reveal animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
