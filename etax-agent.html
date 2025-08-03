@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etax Agent by Brainergy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #F9FAFB; /* Tailwind's gray-50 */
+            color: #1F2937; /* Tailwind's gray-800 */
+        }
+        .animated-section {
+            transition: all 0.6s ease-in-out;
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        .animated-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accent-gradient-text {
+            background: linear-gradient(to right, #2563eb, #4f46e5); /* Blue-600 to Indigo-600 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-color: #F9FAFB;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="accent-gradient-text">Brainergy</span> e-Tax
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#benefits" class="hover:text-blue-600 transition-colors">ประโยชน์</a></li>
+                <li><a href="#features" class="hover:text-blue-600 transition-colors">ฟีเจอร์</a></li>
+                <li><a href="#how-it-works" class="hover:text-blue-600 transition-colors">การทำงาน</a></li>
+            </ul>
+            <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-transform hover:scale-105">
+                ขอใบเสนอราคา
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg py-20 md:py-28">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+                        Brainergy <span class="accent-gradient-text">e-Tax Knowledge Agent</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mb-8">
+                        ผู้ช่วย AI อัจฉริยะสำหรับองค์กร ให้ทุกเรื่อง e-Tax และการใช้งานระบบ SmartTAX เป็นเรื่องง่ายแค่ปลายนิ้ว
+                    </p>
+                    <a href="#benefits" class="bg-blue-600 text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-blue-700 transition-all hover:scale-105 inline-block">
+                        เรียนรู้เพิ่มเติม
+                    </a>
+                </div>
+                <div class="animated-section">
+                    <img src="https://placehold.co/800x600/dbeafe/1d4ed8?text=e-Tax+Knowledge+Agent" alt="Brainergy e-Tax Knowledge Agent" class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 animated-section">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">ทำไมต้องเลือก Brainergy e-Tax Agent?</h2>
+                    <p class="text-gray-600 text-lg">เพิ่มประสิทธิภาพ ลดความผิดพลาด และเสริมความมั่นใจให้ทีมของคุณ</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="animated-section bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200 text-center">
+                        <div class="mb-4 inline-block p-4 bg-blue-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">ประหยัดเวลา</h3>
+                        <p class="text-gray-600">ลดเวลาในการค้นหาข้อมูลและตอบคำถามซ้ำๆ พนักงานได้โฟกัสกับงานที่สำคัญกว่า</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="animated-section bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200 text-center">
+                        <div class="mb-4 inline-block p-4 bg-blue-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">ลดข้อผิดพลาด</h3>
+                        <p class="text-gray-600">ได้รับข้อมูลที่ถูกต้องและเป็นมาตรฐานเดียวกัน ลดความเสี่ยงจากความผิดพลาดของมนุษย์</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="animated-section bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200 text-center">
+                        <div class="mb-4 inline-block p-4 bg-blue-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">ข้อมูลเป็นปัจจุบัน</h3>
+                        <p class="text-gray-600">มั่นใจได้ว่าข้อมูลและแนวปฏิบัติเกี่ยวกับ e-Tax เป็นไปตามกฎระเบียบล่าสุดอยู่เสมอ</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="animated-section bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200 text-center">
+                         <div class="mb-4 inline-block p-4 bg-blue-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">พร้อมตอบ 24/7</h3>
+                        <p class="text-gray-600">พนักงานสามารถเข้าถึงข้อมูลและความช่วยเหลือได้ทุกที่ ทุกเวลาที่ต้องการ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20">
+             <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="animated-section">
+                        <img src="https://placehold.co/800x700/e5e7eb/1e3a8a?text=SmartTAX+UI" alt="ระบบ SmartTAX" class="rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="animated-section">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">ฟีเจอร์หลักของเรา</h2>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1">✓</div>
+                                <div>
+                                    <h4 class="font-bold text-lg">คลังความรู้ e-Tax</h4>
+                                    <p class="text-gray-600">ตอบทุกคำถามเกี่ยวกับใบกำกับภาษีอิเล็กทรอนิกส์ ตั้งแต่ขั้นพื้นฐานจนถึงกรณีศึกษาที่ซับซ้อน</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1">✓</div>
+                                <div>
+                                    <h4 class="font-bold text-lg">คู่มือการใช้งาน SmartTAX</h4>
+                                    <p class="text-gray-600">แนะนำขั้นตอนการใช้งานระบบ SmartTAX อย่างละเอียด พร้อมภาพประกอบและวิดีโอสาธิต</p>
+                                </div>
+                            </li>
+                             <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1">✓</div>
+                                <div>
+                                    <h4 class="font-bold text-lg">ค้นหาเอกสารอัจฉริยะ</h4>
+                                    <p class="text-gray-600">ค้นหาข้อมูลจากคู่มือ, ประกาศ, หรือเอกสารภายในที่เกี่ยวข้องกับ e-Tax ได้อย่างรวดเร็ว</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works Section -->
+        <section id="how-it-works" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 animated-section">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">เริ่มต้นใช้งานง่ายๆ ใน 3 ขั้นตอน</h2>
+                </div>
+                <div class="relative grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Dashed line for desktop -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 border-t-2 border-dashed border-gray-300" style="transform: translateY(-50%); z-index: 0;"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="animated-section relative z-10">
+                        <div class="mb-4 inline-block p-5 bg-white border-2 border-blue-500 rounded-full text-2xl font-bold text-blue-500">1</div>
+                        <h3 class="font-bold text-xl mb-2">เชื่อมต่อข้อมูล</h3>
+                        <p class="text-gray-600">เราจะนำเข้าข้อมูลความรู้, คู่มือการใช้งาน, และเอกสารที่จำเป็นเข้าสู่ระบบ AI</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="animated-section relative z-10">
+                        <div class="mb-4 inline-block p-5 bg-white border-2 border-blue-500 rounded-full text-2xl font-bold text-blue-500">2</div>
+                        <h3 class="font-bold text-xl mb-2">เริ่มถาม-ตอบ</h3>
+                        <p class="text-gray-600">พนักงานสามารถเริ่มพิมพ์คำถามที่สงสัยเกี่ยวกับ e-Tax หรือ SmartTAX ได้ทันที</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="animated-section relative z-10">
+                        <div class="mb-4 inline-block p-5 bg-white border-2 border-blue-500 rounded-full text-2xl font-bold text-blue-500">3</div>
+                        <h3 class="font-bold text-xl mb-2">รับคำตอบทันที</h3>
+                        <p class="text-gray-600">AI จะประมวลผลและให้คำตอบที่ถูกต้องพร้อมแหล่งอ้างอิงภายในไม่กี่วินาที</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-blue-700 text-white">
+            <div class="container mx-auto px-6 text-center animated-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">พร้อมยกระดับการจัดการ e-Tax ขององค์กรคุณแล้วหรือยัง?</h2>
+                <p class="text-blue-100 text-lg max-w-2xl mx-auto mb-8">ติดต่อเราเพื่อขอรับการสาธิต (Demo) หรือสอบถามข้อมูลเพิ่มเติมได้แล้ววันนี้</p>
+                <a href="#" class="bg-white text-blue-700 font-bold px-8 py-4 rounded-full text-lg hover:bg-gray-100 transition-all hover:scale-105 inline-block">
+                    ติดต่อทีมงาน Brainergy
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Brainergy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll-triggered animations
+        const animatedSections = document.querySelectorAll('.animated-section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Optional: stop observing once animated
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        animatedSections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
