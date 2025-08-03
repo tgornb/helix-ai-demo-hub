@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helix MAS Agent by UIH - ปลดล็อกศักยภาพทีม Support ของคุณ</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles inspired by the new reference image */
+        body {
+            font-family: 'Kanit', 'Inter', sans-serif;
+            background-color: #0A0F1F; /* Dark blue background */
+            color: #E0E0E0;
+        }
+
+        .highlight-text {
+            color: #60A5FA; /* Light blue for highlights */
+        }
+        
+        .hero-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 60%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(10, 15, 31, 0) 70%);
+            filter: blur(90px);
+            z-index: -1;
+            animation: pulse-glow 10s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            from {
+                opacity: 0.6;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        .card {
+            background-color: #111827; /* Darker card background */
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+        }
+
+        /* Scroll reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/50 backdrop-blur-lg border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="highlight-text">Helix</span>
+                <span class="text-gray-300">MAS Agent by UIH</span>
+            </div>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-5 rounded-lg transition-colors duration-300">
+                ติดต่อเรา
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
+            <div class="hero-glow"></div>
+            <div class="container mx-auto px-6 z-10">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight reveal">
+                    หยุดปัญหา <span class="highlight-text">ความรู้ติดตัวบุคคล</span><br>ในทีม Support
+                </h1>
+                <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-gray-400 reveal" style="transition-delay: 200ms;">
+                    Helix MAS Agent by UIH คือคลังความรู้กลางอัจฉริยะ ที่รวบรวมข้อมูลสำคัญทั้งหมดไว้ในที่เดียว ช่วยสร้างมาตรฐานการบริการและเพิ่มศักยภาพการขยายทีมได้อย่างก้าวกระโดด
+                </p>
+                <div class="mt-10 reveal" style="transition-delay: 400ms;">
+                    <a href="#features" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/20">
+                        ดูคุณสมบัติเพิ่มเติม
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="py-20 sm:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white reveal">ความท้าทายที่ทีม Support ต้องเผชิญ</h2>
+                    <p class="mt-4 text-gray-400 reveal" style="transition-delay: 200ms;">ความรู้ที่กระจัดกระจายและขึ้นอยู่กับประสบการณ์ของแต่ละบุคคล สร้างปัญหาคอขวดและลดทอนคุณภาพการบริการ</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-8">
+                    <!-- Problem 1 -->
+                    <div class="card p-8 rounded-2xl reveal">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-600/80 text-white mb-6">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">ขาดมาตรฐานการบริการ</h3>
+                        <p class="mt-2 text-gray-400">การแก้ปัญหาขึ้นอยู่กับความสามารถเฉพาะตัว ทำให้คุณภาพการบริการไม่สม่ำเสมอในแต่ละครั้งที่ลูกค้าติดต่อเข้ามา</p>
+                    </div>
+                    <!-- Problem 2 -->
+                    <div class="card p-8 rounded-2xl reveal" style="transition-delay: 200ms;">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-500/80 text-white mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">พนักงานใหม่ใช้เวลาเรียนรู้นาน</h3>
+                        <p class="mt-2 text-gray-400">ต้องใช้เวลาและทรัพยากรสูงในการฝึกอบรมพนักงานใหม่ให้มีความรู้ทัดเทียมกับผู้มีประสบการณ์</p>
+                    </div>
+                    <!-- Problem 3 -->
+                    <div class="card p-8 rounded-2xl reveal" style="transition-delay: 400ms;">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-cyan-500/80 text-white mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">ข้อมูลสำคัญกระจัดกระจาย</h3>
+                        <p class="mt-2 text-gray-400">เงื่อนไขสัญญา, SLA, และคู่มือเทคนิคถูกเก็บแยกกัน ทำให้การค้นหาและอ้างอิงข้อมูลเป็นไปอย่างล่าช้า</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution/Features Section -->
+        <section id="features" class="py-20 sm:py-32 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white reveal">
+                        <span class="highlight-text">Helix MAS Agent by UIH</span> คือคำตอบ
+                    </h2>
+                    <p class="mt-4 text-gray-400 reveal" style="transition-delay: 200ms;">
+                        เราเปลี่ยนความท้าทายให้เป็นโอกาส ด้วยคลังความรู้กลางที่เข้าถึงง่ายและชาญฉลาด
+                    </p>
+                </div>
+                <div class="mt-16 grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="reveal">
+                        <div class="space-y-8">
+                            <!-- Feature 1 -->
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 8v-4a1 1 0 011-1h2a1 1 0 011 1v4m-6 0h6" /></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-white">คลังความรู้กลาง (Centralized Knowledge)</h4>
+                                    <p class="mt-1 text-gray-400">รวบรวมทุกข้อมูลสำคัญ: เงื่อนไขสัญญา, SLA, คู่มือทางเทคนิค, และประวัติการแก้ไขปัญหาไว้ในที่เดียว</p>
+                                </div>
+                            </div>
+                             <!-- Feature 2 -->
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-white">Agent อัจฉริยะช่วยตอบคำถาม</h4>
+                                    <p class="mt-1 text-gray-400">ทีมงานสามารถสอบถาม Agent และได้รับคำตอบที่ถูกต้องและรวดเร็ว โดยอ้างอิงจากข้อมูลในคลังความรู้</p>
+                                </div>
+                            </div>
+                             <!-- Feature 3 -->
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-white">เพิ่มความสามารถในการขยายทีม</h4>
+                                    <p class="mt-1 text-gray-400">พนักงานใหม่สามารถเรียนรู้และทำงานได้ทัดเทียมผู้มีประสบการณ์ ลดเวลา onboarding และเพิ่มประสิทธิภาพโดยรวม</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal" style="transition-delay: 200ms;">
+                        <img src="https://placehold.co/600x500/111827/60A5FA?text=Helix+Agent+by+UIH" alt="Helix MAS Agent by UIH Interface" class="rounded-2xl shadow-2xl shadow-blue-900/30 w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section id="contact" class="py-20 sm:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto reveal">
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white">
+                        พร้อมที่จะยกระดับทีม Support ของคุณแล้วหรือยัง?
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-400">
+                        ติดต่อเราเพื่อขอรับการสาธิต (Demo) และดูว่า Helix MAS Agent by UIH
+                        จะช่วยปลดล็อกศักยภาพทีมของคุณได้อย่างไร
+                    </p>
+                    <div class="mt-10">
+                        <a href="mailto:contact@helix.com" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/20">
+                            ขอรับ Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 Helix. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll reveal animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optional: unobserve after revealing to save resources
+                        // observer.unobserve(entry.target); 
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
