@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIH Helix Ai Agents Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #0A101E; /* Dark Navy Blue */
+            color: #E5E7EB; /* Light Gray */
+        }
+        .feature-card {
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .feature-card.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accent-text {
+            color: #007BFF; /* Accent Blue */
+        }
+        .hero-bg {
+            background-color: #0A101E;
+        }
+        .card-bg {
+            background-color: #1C273A; /* Lighter Navy for cards */
+            border: 1px solid #2A3A55;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-[#0A101E]/80 backdrop-blur-lg sticky top-0 z-50 shadow-lg shadow-blue-500/5">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">
+                UIH <span class="accent-text">HELIX.AI</span>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#features" class="text-gray-300 hover:text-white transition-colors">ฟีเจอร์</a></li>
+                <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">บริการของเรา</a></li>
+                <li><a href="#security" class="text-gray-300 hover:text-white transition-colors">ความปลอดภัย</a></li>
+            </ul>
+            <a href="#" class="bg-[#007BFF] text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-transform hover:scale-105">
+                ติดต่อเรา
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    ปลดล็อกศักยภาพธุรกิจของคุณ<br/>ด้วย <span class="accent-text">Helix AI Agents</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    โซลูชันครบวงจรสำหรับองค์กรที่ต้องการสร้างและบริหารจัดการ AI Agents เพื่อเพิ่มขีดความสามารถในการแข่งขันทางธุรกิจด้วย AI
+                </p>
+                <a href="#features" class="border-2 border-[#007BFF] text-[#007BFF] font-bold px-8 py-3 rounded-full text-lg hover:bg-[#007BFF] hover:text-white transition-all hover:scale-105 inline-block">
+                    เริ่มต้นใช้งาน
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3 text-white">คุณกำลังเจอปัญหาเหล่านี้อยู่ใช่ไหม?</h2>
+                    <p class="text-gray-400 text-lg">Helix AI Agents ถูกสร้างมาเพื่อแก้ปัญหาเหล่านี้โดยเฉพาะ</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/600x400/1C273A/E5E7EB?text=ค้นหาและเข้าถึง" alt="ค้นหาและเข้าถึงข้อมูล" class="rounded-lg mb-6 w-full h-40 object-cover">
+                        <h3 class="font-bold text-xl mb-2 text-white">ค้นหาและเข้าถึงข้อมูล</h3>
+                        <p class="text-gray-400">การค้นหาข้อมูลที่ต้องการจากเอกสารจำนวนมหาศาลเป็นเรื่องที่ใช้เวลานานและซับซ้อน</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/600x400/1C273A/E5E7EB?text=ความปลอดภัย" alt="ความปลอดภัยของข้อมูล" class="rounded-lg mb-6 w-full h-40 object-cover">
+                        <h3 class="font-bold text-xl mb-2 text-white">ความปลอดภัยของข้อมูล</h3>
+                        <p class="text-gray-400">กังวลเรื่องความปลอดภัยในการนำข้อมูลภายในองค์กรไปใช้งานกับ Public AI</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/600x400/1C273A/E5E7EB?text=กระบวนการซ้ำซ้อน" alt="กระบวนการที่ซ้ำซ้อน" class="rounded-lg mb-6 w-full h-40 object-cover">
+                        <h3 class="font-bold text-xl mb-2 text-white">กระบวนการที่ซ้ำซ้อน</h3>
+                        <p class="text-gray-400">พนักงานต้องเสียเวลาไปกับงาน Routine ที่มีรูปแบบซ้ำๆ เดิมๆ ทำให้ขาดประสิทธิภาพ</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/600x400/1C273A/E5E7EB?text=ความรู้กระจัดกระจาย" alt="ความรู้ที่กระจัดกระจาย" class="rounded-lg mb-6 w-full h-40 object-cover">
+                        <h3 class="font-bold text-xl mb-2 text-white">ความรู้ที่กระจัดกระจาย</h3>
+                        <p class="text-gray-400">ข้อมูลและความเชี่ยวชาญกระจัดกระจายอยู่ตามแผนกต่างๆ ทำให้ไม่สามารถนำมาใช้ประโยชน์ได้อย่างเต็มที่</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customizable AI Section -->
+        <section class="py-20 bg-[#10182A]">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3 text-white">AI ที่ปรับแต่งได้ ดั่งใจนึก</h2>
+                    <p class="text-gray-400 text-lg">สร้างผู้ช่วย AI ที่มีบุคลิกและความสามารถเฉพาะตัวสำหรับองค์กรของคุณ</p>
+                </div>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                     <!-- Feature 5 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/600x400/1C273A/007BFF?text=Multi-LLM" alt="รองรับ AI ชั้นนำระดับโลก" class="rounded-lg mb-6 w-full h-40 object-cover">
+                        <h3 class="font-bold text-xl mb-2 text-white">รองรับ AI ชั้นนำระดับโลก</h3>
+                        <p class="text-gray-400">อิสระในการเลือกใช้โมเดลภาษา (LLM) ที่ดีที่สุดจาก OpenAI, Google, Anthropic และอีกมากมาย</p>
+                    </div>
+                     <!-- Feature 6 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/600x400/1C273A/007BFF?text=Agent+Personas" alt="สร้างคาแรคเตอร์ให้ AI" class="rounded-lg mb-6 w-full h-40 object-cover">
+                        <h3 class="font-bold text-xl mb-2 text-white">สร้าง "คาแรคเตอร์" ให้ AI</h3>
+                        <p class="text-gray-400">กำหนดบทบาทและบุคลิกให้ AI เป็นผู้เชี่ยวชาญเฉพาะด้าน เช่น นักการตลาด หรือที่ปรึกษากฎหมาย</p>
+                    </div>
+                     <!-- Feature 7 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/600x400/1C273A/007BFF?text=Bring+Your+Own+Model" alt="ความฉลาดที่ควบคุมได้" class="rounded-lg mb-6 w-full h-40 object-cover">
+                        <h3 class="font-bold text-xl mb-2 text-white">ความฉลาดที่ควบคุมได้</h3>
+                        <p class="text-gray-400">สามารถนำโมเดล AI ที่องค์กรพัฒนาขึ้นเอง (BYOM) มาใช้งานบนแพลตฟอร์มได้อย่างไร้ขีดจำกัด</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3 text-white">บริการครบวงจรจาก UIH พร้อมดูแลคุณ</h2>
+                    <p class="text-gray-400 text-lg">เราไม่ได้มอบแค่แพลตฟอร์ม แต่เรามอบโซลูชันที่สมบูรณ์แบบพร้อมทีมงานมืออาชีพ</p>
+                </div>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg text-center">
+                        <img src="https://placehold.co/400x300/1C273A/E5E7EB?text=Private+Infra" alt="Private AI Infrastructure" class="rounded-full mb-6 w-32 h-32 object-cover mx-auto border-4 border-[#2A3A55] shadow-xl">
+                        <h3 class="font-bold text-xl mb-2 text-white">Private AI Infrastructure</h3>
+                        <p class="text-gray-400">จัดเตรียมโครงสร้างพื้นฐาน AI แบบส่วนตัว (Dedicated & Isolated) เพื่อความปลอดภัยสูงสุดของข้อมูลคุณ</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg text-center">
+                        <img src="https://placehold.co/400x300/1C273A/E5E7EB?text=AI+Consult" alt="ทีมที่ปรึกษา AI" class="rounded-full mb-6 w-32 h-32 object-cover mx-auto border-4 border-[#2A3A55] shadow-xl">
+                        <h3 class="font-bold text-xl mb-2 text-white">ทีมที่ปรึกษา AI</h3>
+                        <p class="text-gray-400">ผู้เชี่ยวชาญของเราพร้อมให้คำปรึกษาอย่างใกล้ชิด เพื่อประยุกต์ใช้ AI ให้ตรงกับเป้าหมายธุรกิจ</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="feature-card card-bg p-8 rounded-2xl shadow-lg text-center">
+                        <img src="https://placehold.co/400x300/1C273A/E5E7EB?text=Agent+Flow" alt="บริการสร้าง AI Agent Flow" class="rounded-full mb-6 w-32 h-32 object-cover mx-auto border-4 border-[#2A3A55] shadow-xl">
+                        <h3 class="font-bold text-xl mb-2 text-white">บริการสร้าง AI Agent Flow</h3>
+                        <p class="text-gray-400">สร้างกระบวนการทำงานอัตโนมัติที่ซับซ้อน ให้ AI หลายตัวทำงานร่วมกันได้อย่างครบวงจร</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security & Developer Section -->
+        <section id="security" class="py-20 bg-[#10182A]">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Security -->
+                <div class="feature-card">
+                    <img src="https://placehold.co/800x600/1C273A/007BFF?text=Security+First" alt="ความปลอดภัยสูงสุด" class="rounded-2xl shadow-2xl mb-8 w-full">
+                    <h2 class="text-3xl font-bold mb-4 text-white">ปลอดภัยสูงสุด ทำงานร่วมกันอย่างมีประสิทธิภาพ</h2>
+                    <p class="text-gray-400 mb-4">ข้อมูลสำคัญขององค์กรจะไม่ถูกส่งออกไปภายนอกเด็ดขาด พร้อมระบบจัดการผู้ใช้งาน (Multi-User Management) เพื่อการทำงานร่วมกันอย่างปลอดภัย</p>
+                </div>
+                <!-- Developer Friendly -->
+                <div class="feature-card">
+                     <img src="https://placehold.co/800x600/1C273A/007BFF?text=Developer+API" alt="เป็นมิตรกับนักพัฒนา" class="rounded-2xl shadow-2xl mb-8 w-full">
+                    <h2 class="text-3xl font-bold mb-4 text-white">ใช้งานง่าย เป็นมิตรกับนักพัฒนา</h2>
+                    <p class="text-gray-400 mb-4">อินเทอร์เฟซที่เรียบง่าย พร้อม API ให้นักพัฒนาสามารถนำความสามารถของ AI ไปเชื่อมต่อกับแอปพลิเคชันหรือระบบอื่นๆ ขององค์กรได้อย่างไร้ขีดจำกัด</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A101E] border-t border-gray-700/50">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">UIH <span class="accent-text">HELIX.AI</span></h3>
+                    <p class="text-gray-400">แพลตฟอร์ม AI อัจฉริยะสำหรับองค์กร</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 text-white">ลิงก์ด่วน</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">ฟีเจอร์</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">บริการของเรา</a></li>
+                        <li><a href="#security" class="text-gray-400 hover:text-white">ความปลอดภัย</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 text-white">ติดต่อเรา</h4>
+                    <p class="text-gray-400">บริษัท ยูไนเต็ด อินฟอร์เมชั่น ไฮเวย์ จำกัด</p>
+                    <p class="text-gray-400">อีเมล: contact@uih.co.th</p>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700/50 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 UIH Helix Ai Agents Platform. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll-triggered animations
+        const featureCards = document.querySelectorAll('.feature-card');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        featureCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
+</body>
+</html>
 
