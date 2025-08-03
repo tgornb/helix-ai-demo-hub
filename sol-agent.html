@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol-Agent by Brainergy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #F9FAFB; /* Tailwind's gray-50 */
+            color: #111827; /* Tailwind's gray-900 */
+        }
+        .animated-section {
+            transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        .animated-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accent-gradient-text {
+            background: linear-gradient(to right, #1d4ed8, #4f46e5); /* Blue-700 to Indigo-600 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg-pattern {
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold">
+                <span class="accent-gradient-text">Sol-Agent</span>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8 font-medium">
+                <li><a href="#why-us" class="hover:text-blue-600 transition-colors">ทำไมต้อง Sol-Agent</a></li>
+                <li><a href="#features" class="hover:text-blue-600 transition-colors">ฟีเจอร์</a></li>
+                <li><a href="#how-it-works" class="hover:text-blue-600 transition-colors">การทำงาน</a></li>
+            </ul>
+            <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-transform hover:scale-105 font-semibold">
+                Request a Demo
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg-pattern py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    ปลดล็อกศักยภาพทีม Presales ของคุณ
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    ผู้ช่วย AI อัจฉริยะสำหรับออกแบบโซลูชัน ร่าง TOR และสร้าง Proposal ชนะทุกการแข่งขัน
+                </p>
+                <a href="#features" class="bg-blue-600 text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-blue-700 transition-all hover:scale-105 inline-block">
+                    ค้นพบฟีเจอร์
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 animated-section">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">เปลี่ยนความท้าทายให้เป็น <span class="accent-gradient-text">โอกาสชนะ</span></h2>
+                    <p class="text-gray-600 text-lg">ลดภาระงาน เพิ่มความแม่นยำ และเพิ่ม Win Rate ให้กับทีม Presales</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="animated-section bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
+                        <div class="mb-4 inline-block p-4 bg-blue-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">ลดภาระงานเอกสาร</h3>
+                        <p class="text-gray-600">สร้างเอกสาร TOR และ Proposal ที่ซับซ้อนได้ในเวลาไม่กี่นาที ให้ทีมมีเวลาโฟกัสกับลูกค้ามากขึ้น</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="animated-section bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
+                        <div class="mb-4 inline-block p-4 bg-blue-100 rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">เพิ่ม Win Rate</h3>
+                        <p class="text-gray-600">นำเสนอโซลูชันที่แม่นยำและตอบโจทย์ลูกค้าได้ดีที่สุด ด้วยข้อมูลเชิงลึกจาก AI</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="animated-section bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
+                        <div class="mb-4 inline-block p-4 bg-blue-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">ทำงานรวดเร็วขึ้น</h3>
+                        <p class="text-gray-600">ย่นระยะเวลาในแต่ละขั้นตอนของ Presales Cycle ทำให้ปิดการขายได้เร็วและมากขึ้น</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20">
+             <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                    <div class="animated-section">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">ผู้ช่วยออกแบบโซลูชัน</h2>
+                        <p class="text-gray-600 text-lg mb-4">Sol-Agent ช่วยวิเคราะห์ความต้องการของลูกค้าและข้อมูลผลิตภัณฑ์ เพื่อออกแบบโซลูชันที่เหมาะสมและคุ้มค่าที่สุด พร้อมเปรียบเทียบทางเลือกต่างๆ เพื่อการตัดสินใจที่ดีที่สุด</p>
+                    </div>
+                    <div class="animated-section">
+                        <img src="https://placehold.co/800x600/e0e7ff/3730a3?text=Solution+Design" alt="Solution Design" class="rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                     <div class="animated-section order-last md:order-first">
+                        <img src="https://placehold.co/800x600/c7d2fe/4338ca?text=Proposal+Automation" alt="Proposal Automation" class="rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="animated-section">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">สร้าง TOR และ Proposal อัตโนมัติ</h2>
+                        <p class="text-gray-600 text-lg mb-4">เปลี่ยนข้อมูลโซลูชันที่ซับซ้อนให้กลายเป็นเอกสาร TOR และ Proposal ที่มีความเป็นมืออาชีพ ถูกต้องตามมาตรฐาน และพร้อมนำเสนอได้ในเวลาอันรวดเร็ว</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="animated-section">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">คลังความรู้ที่ต่อยอดได้</h2>
+                        <p class="text-gray-600 text-lg mb-4">คุณสามารถเพิ่มข้อมูลผลิตภัณฑ์ใหม่, Case Study, หรือ Best Practice ต่างๆ ให้ AI เรียนรู้ได้ตลอดเวลา ทำให้ Sol-Agent ฉลาดและทันต่อการเปลี่ยนแปลงของตลาดอยู่เสมอ</p>
+                    </div>
+                    <div class="animated-section">
+                        <img src="https://placehold.co/800x600/a5b4fc/4f46e5?text=Knowledge+Base" alt="Knowledge Base" class="rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works Section -->
+        <section id="how-it-works" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 animated-section">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">ทำงานง่ายๆ ใน 3 ขั้นตอน</h2>
+                </div>
+                <div class="relative grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Dashed line for desktop -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 border-t-2 border-dashed border-gray-300" style="z-index: 0;"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="animated-section relative z-10">
+                        <div class="mb-4 inline-block p-6 bg-white border-4 border-blue-500 rounded-full text-3xl font-bold text-blue-500">1</div>
+                        <h3 class="font-bold text-xl mb-2">ป้อนข้อมูล</h3>
+                        <p class="text-gray-600">ระบุความต้องการของลูกค้าและเลือกผลิตภัณฑ์ที่เกี่ยวข้องในระบบ</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="animated-section relative z-10">
+                        <div class="mb-4 inline-block p-6 bg-white border-4 border-blue-500 rounded-full text-3xl font-bold text-blue-500">2</div>
+                        <h3 class="font-bold text-xl mb-2">AI สร้างเอกสาร</h3>
+                        <p class="text-gray-600">Sol-Agent ออกแบบโซลูชันและสร้างร่างเอกสาร TOR และ Proposal ให้ทันที</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="animated-section relative z-10">
+                        <div class="mb-4 inline-block p-6 bg-white border-4 border-blue-500 rounded-full text-3xl font-bold text-blue-500">3</div>
+                        <h3 class="font-bold text-xl mb-2">นำเสนอและปิดการขาย</h3>
+                        <p class="text-gray-600">ทีม Presales ตรวจสอบ ปรับแก้ และนำเสนอเอกสารคุณภาพสูงเพื่อคว้าชัยชนะ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-blue-700 text-white">
+            <div class="container mx-auto px-6 text-center animated-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">พร้อมเปลี่ยนเกมการทำงานของทีม Presales แล้วหรือยัง?</h2>
+                <p class="text-blue-100 text-lg max-w-2xl mx-auto mb-8">ติดต่อเราเพื่อรับการสาธิต (Demo) ส่วนตัว และดูว่า Sol-Agent จะช่วยเพิ่ม Win Rate ให้องค์กรคุณได้อย่างไร</p>
+                <a href="https://helix-agent-prod.up.railway.app/" class="bg-white text-blue-700 font-bold px-8 py-4 rounded-full text-lg hover:bg-gray-100 transition-all hover:scale-105 inline-block">
+                    ขอรับการ Demo
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 UIH. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll-triggered animations
+        const animatedSections = document.querySelectorAll('.animated-section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        animatedSections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
